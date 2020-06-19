@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+  <head>
+    <!-- means the list of all the avaiable characters available for the unicode character set -->
+    <!-- meta data gives extra data about the the following site -->
+    <meta charset="utf-8">
+    <title>Ray's Hobbies</title>
+  </head>
+  <body>
+    <h3>My contact info</h3>
+    <!-- So these are just attributes of the ordered list html tag look them over if need -->
+    <ol type="" start="1">
+      <li>Raymar.Raya@gmail.com</li>
+      <li>360-969-6605</li>
+      <li>Just call me on the streets!</li>
+    </ol>
+    <!-- So this is a little more complicated
+      so the action is what the form will do whenever
+      the submit button has been pressed. Now what this will do
+      is it will write an email to raymar.raya@gmail.com and put all
+      the data that would be presented in percentages in text form with the attributes
+      enctype and method -->
+    <form action="mailto:raymar.raya@gmail.com" method = "post" enctype="text/plain">
+      <label>Your Name:</label>
+      <input type="text" name = "yourName">
+      <br>
+      <label>Your Email:</label>
+      <!-- Basic Functionality of an email type bar --->
+      <input type = "email"  name = "yourEmail"></input>
+      <br>
+      <label >Your Message:</label>
+      <br>
+      <!-- New html tag that puts a text box on the screen with the size dependent
+        on the rows and column attributes --->
+      <textarea name="yourMessage" rows="10" cols="50"></textarea>
+      <br>
+      <input type="submit">
+      <hr>
+      <!-- Last thing! So the names will be useful whenever you want to look at the 
+        javascript that might use these as variables and all -->
+    </form>
+    <br>
+    <a href="hobbies.html">My Hobbies</a>
+    <br>
+    <a href="index.html">Home Page</a>
+    <br>
+    <a href="input-cheat-sheet.html">Input Form Cheat Sheet</a>
+  </body>
+</html>
